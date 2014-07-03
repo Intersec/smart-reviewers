@@ -1,0 +1,34 @@
+Smart-reviewers gerrit plugin
+=============================
+
+Description
+-----------
+
+This plugin tries to select the best reviewers based on the following
+criteria:
+
+* the number of impacted lines belonging to a developer (using git blame,
+  this is what the reviewers-by-blame plugin does),
+* the last reviewers of the impacted files,
+* the workload of the reviewers found with the two previous rules.
+
+Usage
+-----
+
+The weights used for each rule can be set in configuration and
+the parameters are named respectively:
+weightBlame, weightLastReviewers, weightWorkload.
+
+Credit
+------
+
+This plugin was developed during the hackathon that happened at Intersec on 3rd and 4th of July 2014.
+It was developed by the 3rd place awarded team : *Review Pimps* (ma braguette n'est pas ouverte).
+
+Authors:
+
+* Romain Gautier
+* Louis Traynard
+* Romain Le Godais
+* Kamal Fadlaoui
+* Thomas Franciszkowski
